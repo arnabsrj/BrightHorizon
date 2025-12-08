@@ -17,7 +17,7 @@ connectDB();
 
 const app = express();
 app.use(cors({
-  origin: ['http://localhost:5173', process.env.FRONTEND_URL], // frontend origin
+  origin: ['http://localhost:5173', 'https://your-frontend.vercel.app'], // frontend origin
   credentials: true,               // allow cookies to be sent
 }));
 app.use(express.json());
