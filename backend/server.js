@@ -17,11 +17,17 @@ connectDB();
 
 const app = express();
 app.use(cors({
-  origin: 'http://localhost:5173', // frontend origin
+  origin: ['http://localhost:5173', process.env.FRONTEND_URL], // frontend origin
   credentials: true,               // allow cookies to be sent
 }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+
+// 👇 MUST exist for Render health check
+app.get('/', (req, res) => {
+  res.send('Backend is running on Render 🚀');
+});
 
 
 // Temporary admin setup route
