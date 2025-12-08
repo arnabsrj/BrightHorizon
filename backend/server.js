@@ -19,7 +19,8 @@ const app = express();
 app.use(cors({
   origin: [
     'http://localhost:5173',
-    'https://bright-horizon.vercel.app'
+    'https://bright-horizon.vercel.app',
+    'https://bright-horizon.vercel.app/'
   ],
   credentials: true,
 }));
