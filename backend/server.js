@@ -17,9 +17,13 @@ connectDB();
 
 const app = express();
 app.use(cors({
-  origin: ['http://localhost:5173', 'https://your-frontend.vercel.app'], // frontend origin
-  credentials: true,               // allow cookies to be sent
+  origin: [
+    'http://localhost:5173',
+    'https://bright-horizon.vercel.app'
+  ],
+  credentials: true,
 }));
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
