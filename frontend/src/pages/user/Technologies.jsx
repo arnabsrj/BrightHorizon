@@ -42,7 +42,7 @@ const Technologies = () => {
       desc: "Materials Management module optimizing procurement, inventory control, and material flow across the supply chain.",
     },
     {
-      name: "SAP CS",
+      name: "Service Management",
       icon: <Headphones className="w-10 h-10" />,
       desc: "Customer Service module enabling efficient service operations, warranty management, and field support.",
     },

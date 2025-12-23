@@ -23,14 +23,14 @@ const OurClients = () => {
   }, []);
 
   const clients = [
-    { name: "JOHN DEERE", country: "USA", logo: dLogo },
+    // { name: "JOHN DEERE", country: "USA", logo: dLogo },
     { name: "EMIRATES GLOBAL ALUMINIUM", country: "DUBAI", logo: aLogo },
     { name: "BOSCH", country: "GERMANY", logo: wLogo },
     { name: "MORGAN FOODS", country: "USA", logo: eLogo },
-    { name: "SAUDI CERAMICS", country: "SAUDI ARABIA", logo: gLogo },
+    // { name: "SAUDI CERAMICS", country: "SAUDI ARABIA", logo: gLogo },
     { name: "NEWELL RUBBERMAID", country: "USA", logo: fLogo },
-    { name: "SYSTEMS SILICON MANUFACTURING", country: "SINGAPORE", logo: hLogo },
-    { name: "INTERSTATE BATTERIES", country: "USA", logo: cLogo },
+    // { name: "SYSTEMS SILICON MANUFACTURING", country: "SINGAPORE", logo: hLogo },
+    // { name: "INTERSTATE BATTERIES", country: "USA", logo: cLogo },
     { name: "GENENTECH", country: "USA", logo: bLogo },
     { name: "STANLEY BLACK & DECKER", country: "USA", logo: iLogo },
     { name: "VISTA PRINT", country: "USA", logo: jLogo },
