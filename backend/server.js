@@ -16,14 +16,31 @@ dotenv.config();
 connectDB();
 
 const app = express();
-app.use(cors({
-  origin: [
-    'http://localhost:5173',
-    'https://bright-horizon.vercel.app',
-    'https://bright-horizon.vercel.app/'
-  ],
-  credentials: true,
-}));
+
+
+
+// app.options("*", cors());
+// app.options('/*', cors());
+
+
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://bright-horizon.vercel.app"
+];
+
+app.use(
+  cors({
+    origin: function (origin, callback) {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error("Not allowed by CORS"));
+      }
+    },
+    credentials: true,
+  })
+);
+
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

@@ -13,6 +13,8 @@ import { MdOutlineSmartToy } from "react-icons/md";
 import { FaWhatsapp, FaCommentDots } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Chatbot from "../common/Chatbot"; // ✅ make sure the path is correct (adjust if needed)
+import logo from "../../assets/logo/Bhi_logo.png"; // Adjust path if needed
+
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -38,9 +40,9 @@ const Footer = () => {
       { label: "Webinars", href: "/" },
     ],
     contact: [
-      { icon: <Mail className="w-4 h-4" />, text: "hello@brighthorizon.com" },
-      { icon: <Phone className="w-4 h-4" />, text: "+1 (555) 123-4567" },
-      { icon: <MapPin className="w-4 h-4" />, text: "San Francisco, CA" },
+      { icon: <Mail className="w-4 h-4" />, text: " info@BrightHorizon.co.in" },
+      { icon: <Phone className="w-4 h-4" />, text: "+91-912345678" },
+      { icon: <MapPin className="w-4 h-4" />, text: "1-98/5/2A, Spacion Business Center, Madhapur, Hitech city Lingampalli, Hyderabad, Telangana, India" },
     ],
   };
 
@@ -49,50 +51,61 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8">
           {/* Brand & Tagline */}
-          <div className="lg:col-span-2">
-            <h2 className="text-2xl font-bold text-white mb-4">BrightHoRIZon</h2>
-            <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
-              Empowering enterprises with innovative IT solutions, strategic guidance, and measurable results.
-            </p>
-            <div className="flex gap-4 mt-6">
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Facebook"
-                className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors"
-              >
-                <Facebook className="w-5 h-5 text-gray-400 hover:text-white" />
-              </a>
-              <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Twitter"
-                className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-blue-400 transition-colors"
-              >
-                <Twitter className="w-5 h-5 text-gray-400 hover:text-white" />
-              </a>
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LinkedIn"
-                className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors"
-              >
-                <Linkedin className="w-5 h-5 text-gray-400 hover:text-white" />
-              </a>
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram"
-                className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-pink-600 transition-colors"
-              >
-                <Instagram className="w-5 h-5 text-gray-400 hover:text-white" />
-              </a>
-            </div>
-          </div>
+        <div className="lg:col-span-2">
+  {/* Logo */}
+  <div className="mb-1">
+    <img 
+      src={logo}  // Make sure you import logo at the top of your Footer file
+      alt="BrightHorizon Infotech"
+      className="h-24 w-auto object-contain md:h-20 lg:h-36 transition-transform hover:scale-105"
+    />
+  </div>
+
+  {/* Description */}
+  <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
+    Empowering enterprises with innovative IT solutions, strategic guidance, and measurable results.
+  </p>
+
+  {/* Social Media Icons */}
+  <div className="flex gap-4 mt-6">
+    <a
+      href="https://www.facebook.com/brighthorizon-infotech"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Facebook"
+      className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors"
+    >
+      <Facebook className="w-5 h-5 text-gray-400 hover:text-white" />
+    </a>
+    {/* <a
+      href="https://twitter.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Twitter"
+      className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-blue-400 transition-colors"
+    >
+      <Twitter className="w-5 h-5 text-gray-400 hover:text-white" />
+    </a> */}
+    <a
+      href="https://www.linkedin.com/company/brighthorizon-infotech"  // Update with your real LinkedIn if available
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="LinkedIn"
+      className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors"
+    >
+      <Linkedin className="w-5 h-5 text-gray-400 hover:text-white" />
+    </a>
+    <a
+      href="https://www.instagram.com/brighthorizon-infotech"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Instagram"
+      className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-pink-600 transition-colors"
+    >
+      <Instagram className="w-5 h-5 text-gray-400 hover:text-white" />
+    </a>
+  </div>
+</div>
 
           {/* Company */}
           <div>
@@ -188,7 +201,7 @@ const Footer = () => {
         </button>
 
         <a
-          href="https://wa.me/9266594199"
+          href="https://wa.me/91912345678"
           target="_blank"
           rel="noopener noreferrer"
           className="p-3 rounded-full bg-green-600 text-white shadow-lg hover:scale-110 transition-all"

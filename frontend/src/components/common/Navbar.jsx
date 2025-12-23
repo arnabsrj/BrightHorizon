@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X, ChevronDown, ChevronRight } from "lucide-react";
+import logo from "../../assets/logo/Bhi_logo.png"; // adjust path if needed
 
 const Navbar = ({ textColorWhenTransparent = "text-white" }) => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -49,13 +50,13 @@ const Navbar = ({ textColorWhenTransparent = "text-white" }) => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          {/* Brand */}
-          <Link
-            to="/"
-            onClick={closeMenu}
-            className="text-2xl font-extrabold tracking-tight hover:text-blue-400 transition-colors"
-          >
-            Bright<span className="text-blue-400 hover:text-white">HoRIZon</span>
+          {/* Brand - FIXED LOGO */}
+          <Link to="/" onClick={closeMenu} className="flex items-center flex-shrink-0">
+            <img 
+              src={logo}
+              alt="BrightHorizon Infotech"
+              className="h-10 w-auto object-contain sm:h-11 md:h-28 md:w-auto transition-transform duration-200 hover:scale-105"
+            />
           </Link>
 
           {/* Desktop Navigation */}
@@ -77,9 +78,7 @@ const Navbar = ({ textColorWhenTransparent = "text-white" }) => {
               </div>
             </div>
 
-
             {/* Services Dropdown */}
-
             <div className="relative group">
               <button className="flex items-center text-lg font-medium hover:text-blue-400 transition-colors">
                 Services <ChevronDown className="ml-2 w-4 h-4" />

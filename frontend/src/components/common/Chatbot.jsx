@@ -119,11 +119,11 @@ const Chatbot = ({ open, onClose }) => {
       case "Chat with Support":
         botReply({
           sender: "bot",
-          text: "You can directly message us on WhatsApp 👉 https://wa.me/9266594199",
+          text: "You can directly message us on WhatsApp 👉https://wa.me/91912345678",
         });
         break;
       case "Call Us":
-        botReply({ sender: "bot", text: "📞 You can call us at: +91 9266594199" });
+        botReply({ sender: "bot", text: "📞 You can call us at: +91 912345678" });
         break;
       default:
         break;
@@ -161,7 +161,7 @@ const Chatbot = ({ open, onClose }) => {
         botReply({
           sender: "bot",
           text:
-            "💰 For pricing details, please contact us on WhatsApp: https://wa.me/9266594199",
+            "💰 For pricing details, please contact us on WhatsApp: https://wa.me/91912345678",
         });
       } else if (query.includes("company") || query.includes("about")) {
         botReply({

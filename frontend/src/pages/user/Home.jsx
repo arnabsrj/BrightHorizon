@@ -282,6 +282,22 @@ landscape.`;
   >
     <ChevronRight className="w-10 h-10" />
   </button>
+
+  {/* === CAROUSEL DOTS (NEW) === */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex gap-3 z-20">
+          {slides.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentSlide(index)}
+              className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                currentSlide === index
+                  ? "bg-white scale-125"
+                  : "bg-white/40 hover:bg-white/70"
+              }`}
+              aria-label={`Go to slide ${index + 1}`}
+            />
+          ))}
+        </div>
 </section>
       {/* === MISSION SECTION === */}
       <section ref={missionRef} className="py-24 px-6 bg-gray-50">
@@ -424,8 +440,6 @@ landscape.`;
         `}</style>
       </section>
 
-      {/* === BLOGS SECTION (LIVE) === */}
-      {/* ... your blog section remains unchanged ... */}
     </div>
   );
 };

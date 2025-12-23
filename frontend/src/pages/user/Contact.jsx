@@ -774,7 +774,7 @@ const Contact = () => {
       </Grid>
 
       {/* ---------- RIGHT – GOOGLE MAP ---------- */}
-    {/* ---------- RIGHT – GOOGLE MAP ---------- */}
+{/* ---------- RIGHT – GOOGLE MAP ---------- */}
 <Grid item xs={12} md={6}>
   <motion.div
     initial={{ opacity: 0, y: 30 }}
@@ -806,20 +806,19 @@ const Contact = () => {
           width: '100%',
         }}
       >
-     <iframe
-  title="Bright Horizon Office - Spacion Business Center, Hyderabad"
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.3618447346435!2d78.3833379!3d17.4423869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93e1cce19e45%3A0x8afe79bd4bbf5d0b!2sSpacion%20Business%20Centre!5e0!3m2!1sen!2sin!4v1762596618103!5m2!1sen!2sin"
-  style={{
-    border: 0,
-    width: '100%',
-    height: '100%', // keeps it full height
-    display: 'block',
-  }}
-  allowFullScreen=""
-  loading="lazy"
-  referrerPolicy="no-referrer-when-downgrade"
-/>
-
+        <iframe
+          title="Bright Horizon Office - Spacion Business Center, Hyderabad"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.3618447346435!2d78.3833379!3d17.4423869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93e1cce19e45%3A0x8afe79bd4bbf5d0b!2s1-98%2F5%2F2A%2C%20Spacion%20Business%20Center%2C%20Madhapur%2C%20Hitech%20city%20Lingampalli%2C%20Hyderabad%2C%20Telangana%2C%20India!5e0!3m2!1sen!2sin!4v1762596618103!5m2!1sen!2sin"
+          style={{
+            border: 0,
+            width: '100%',
+            height: '100%', // keeps it full height
+            display: 'block',
+          }}
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        />
       </Box>
     </Box>
   </motion.div>
@@ -860,7 +859,7 @@ const Contact = () => {
               <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 1 }}>
                 <Phone sx={{ color: '#1e40af' }} />
                 <Typography variant="body1" color="text.primary">
-                  Mobile: <strong>9014021004</strong>
+                  Mobile: <strong>912345678</strong>
                 </Typography>
               </Box>
             </Grid>
@@ -880,7 +879,7 @@ const Contact = () => {
               <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 1 }}>
                 <LocationOn sx={{ color: '#1e40af' }} />
                 <Typography variant="body1" color="text.primary" sx={{ fontSize: '0.9rem' }}>
-                  <strong>Office:</strong> 1-98/5/2A, Spacion Business Center, Madhapur, Hitech City, Hyderabad India.
+                  <strong>Office:</strong> 1-98/5/2A, Spacion Business Center, Madhapur, Hitech city Lingampalli, Hyderabad, Telangana, India
                 </Typography>
               </Box>
             </Grid>
